@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    color: #424242;
+}
+.header-all{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.header-logos{
+    display: flex;
+    flex-direction: row;
+}
+.header-logos .zeppelins-logo{
+    margin-right: 5px;
+}
+.header-links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 14px;
+    font-weight: 500;
+}
+.header-links .active{
+    color: #5a47ab;
+    font-weight: 700;
+}
+.zeppelins_mobile-logo{
+    display: none;
+}
+.menu-logos{
+    display: none;
+}
+.purple_close-logo{
+    display: none;
+}
+.showcase-all{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 40px;
+}
+.showcase-info{
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    padding-top: 50px;
+}
+.showcase-info h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: #D05270;
+}
+.showcase-info h2{
+    font-size: 52px;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+.showcase-info p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.showcase-socialmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+}
+.showcase-socialmedia .socialmedia-twitter{
+    color: white;
+    background-color: #47acdf;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    gap: 2rem;
+}
+.showcase-socialmedia .socialmedia-linkedin{
+    color: white;
+    background-color: #1275b1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    gap: 2rem;
+}
+.showcase-socialmedia .socialmedia-medium{
+    color: white;
+    background-color: #000000;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    gap: 2rem;
+}
+/* sağdaki fotograf eklendi */
+.showcase-image{
+    flex: 4 ;
+
+}
+.links{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 180px;
+    margin-bottom: 60px;
+}
+.links .item{
+    list-style: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.links .item.active{
+    color: #d05270;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #d05270;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+}
+.postcard-all{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.postcard-1{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+}
+.postcard-2{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+}
+.postcard-image{
+    height: 400px;
+    width: max-content;
+}
+.postcard-date{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+.postcard-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #d05270;
+    margin: 0.5rem 0;
+}
+.postcard-info{
+    font-size: 16px;
+    margin: 0.5rem 0;
+}
+.postcard-link{
+    font-size: 24px;
+    font-weight: 400;
+    color: #d05270;
+    text-decoration: none;
+    border-bottom: 1px solid#d05270;
+    padding-bottom: 5px;
+    width: fit-content;
+    margin-top: 2rem;
+}
+.footer{
+    position: relative;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-links{
+        display: none;
+    }
+    .showcase-image{
+        display: none;
+    }
+    .zeppelins-logo{
+        display: none;
+    }
+    .menu-logo{
+        display: block;
+    }
+    .zeppelins_mobile-logo{
+        display: block;
+        margin-right: 3px;
+    }
+    .header-links-all{
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+    .header-links{
+        z-index: 1;
+        flex-direction: row;
+    }
+    .header-links-all{
+        opacity: 0;
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        transition: height 350 ease-in-out;
+        z-index: -1;
+    }
+    .header-links{
+        flex-direction: column;
+    }
+    .header-links li{
+        margin-bottom: 1,5rem;
+        font-size: 20px;
+    }
+    .header-links-all .active{
+        display: block;
+        height: 100%;
+        opacity: 1;
+        z-index: 1;
+    }
+    .showcase-info{
+        display: flex;
+        flex: 60%;
+        flex-direction: column;
+    }
+    .showcase-info h1{
+        font-size: 20px;
+        font-weight: 700;
+        color: #D05270;
+        margin-bottom: 5px;
+    }
+    .showcase-info h2{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+    .showcase-info p{
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+    .showcase-socialmedia{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        font-size: 12px;
+    }
+    .showcase-socialmedia .socialmedia-twitter{
+        color: white;
+        background-color: #47acdf;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        gap: 2rem;
+    }
+    .showcase-socialmedia .socialmedia-linkedin{
+        color: white;
+        background-color: #1275b1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        gap: 2rem;
+    }
+    .showcase-socialmedia .socialmedia-medium{
+        color: white;
+        background-color: #000000;  
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        gap: 2rem;
+    }
+    .links .item{
+        font-size: 12px;
+
+    }
+
+
+
+    
+}

@@ -1,0 +1,63 @@
+.postcard-detail_container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.postcard-detail_image{
+    width: 100%;
+    height: 100%;
+}
+.postcard-detail_container h1{
+    font-size: 42px;
+    font-weight: 600;
+    color: #340ca3;
+    margin-top: 8rem;
+}
+.postcard-detail_container h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #340ca3;
+    margin-top: 8rem;
+}
+.postcard-detail_container h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #340ca3;
+    margin-top: 8rem;
+}
+.postcard-detail_container p{
+    margin-top: 1rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .postcard-detail_container h1{
+        font-size: 20px; 
+        font-weight: 600;
+        color: #340ca3;
+        margin-top: 3rem;    
+    } 
+    .postcard-detail_container h2{
+        font-size: 18px; 
+        font-weight: 600;
+        color: #340ca3;
+        margin-top: 3rem;     
+    } 
+    .postcard-detail_container h3{
+        font-size: 16px;
+        font-weight: 600;
+        color: #340ca3;
+        margin-top: 3rem;      
+    } 
+    .postcard-detail_container p{
+        font-size: 14px;     
+    } 
+    .postcard-detail_container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .postcard-detail_image{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
